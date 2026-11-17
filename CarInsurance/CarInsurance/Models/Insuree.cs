@@ -57,7 +57,7 @@ namespace CarInsurance.Models
         public bool CoverageType { get; set; }
 
         // Insurance quote calculated by the application.
-        [DataType(DataType.Currency)]
+        [DisplayFormat(DataFormatString = "${0:0.00}")]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Quote { get; set; }
     }
