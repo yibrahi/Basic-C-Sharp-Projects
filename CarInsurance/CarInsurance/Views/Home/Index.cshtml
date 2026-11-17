@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1>Car Insurance</h1>
+
+    <p>Select an option below:</p>
+
+    <p>
+        <a asp-controller="Insurees"
+           asp-action="Create"
+           class="btn btn-primary">
+            Get a Quote
+        </a>
+    </p>
+
+    <p>
+        <a asp-controller="Insurees"
+           asp-action="Index"
+           class="btn btn-secondary">
+            View Insurees
+        </a>
+    </p>
+
+    <p>
+        <a asp-controller="Insurees"
+           asp-action="Admin"
+           class="btn btn-dark">
+            Admin
+        </a>
+    </p>
+</div>
